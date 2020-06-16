@@ -10,7 +10,7 @@ const checkId=function(allUsers){
         if ( index >= 0 ) {
             break;
         }
-        console.log("$ An account with that ID does not exist. Try again.");
+        print("$ An account with that ID does not exist. Try again.");
     }
     return index;
 }
@@ -22,9 +22,9 @@ const requestPassword = function(user) {
         if (password === user.password) {
             break;
         }
-        console.log("$ Wrong password, try typing it again.");
+        print("$ Wrong password, try typing it again.");
     }
-    console.log(`$ Correct password. We validated you as ${user.name}.`);
+    print(`$ Correct password. We validated you as ${user.name}.`);
 }
 
 module.exports={
